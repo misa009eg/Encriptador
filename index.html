@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Encriptador/Desencriptador</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="header">
+    <h1 class="title">ENCRIPTADOR DE TEXTO</h1>
+</div>
+
+<div class="container">
+    <h2>Encriptador/Desencriptador</h2>
+    <div class="instructions">
+        <p>Por favor, ingrese un texto en minúsculas y con los siguientes caracteres permitidos: letras del alfabeto en minúsculas y espacios. No se permiten letras mayúsculas ni caracteres especiales.</p>
+    </div>
+    
+    <div class="input-container">
+        <label for="inputText">Texto original:</label>
+        <textarea id="inputText" rows="6" maxlength="150"></textarea>
+    </div>
+    <div class="input-container">
+        <label for="outputText">Texto encriptado:</label>
+        <textarea id="outputText" rows="6" readonly></textarea>
+    </div>
+    <div class="buttons">
+        <button onclick="convert('encrypt')" onmouseover="highlightButton(this)" onmouseout="unhighlightButton(this)" onclick="changeColorOnClick(this)">Cifrar</button>
+        <button onclick="convert('decrypt')" onmouseover="highlightButton(this)" onmouseout="unhighlightButton(this)" onclick="changeColorOnClick(this)">Descifrar</button>
+        <button onclick="refreshPage()" onmouseover="highlightButton(this)" onmouseout="unhighlightButton(this)" onclick="changeColorOnClick(this)">Refrescar</button>
+    </div>
+    
+</div>
+
+<footer>
+    <p>Misael Espiridion &copy; 2022</p>
+    <p>Fecha de creación: <span id="fecha-creacion"></span></p>
+    <div class="redes-sociales">
+        <a href="https://discord.com" target="_blank"><img src="img/discord-icon.png" alt="Discord"><p>Discord</p></a>
+        <a href="https://github.com/" target="_blank"><img src="img/github-icon.png" alt="Discord"><p>Github</p></a>
+
+    </div>
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
