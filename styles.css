@@ -42,7 +42,7 @@ body {
 }
 
 
-.input-container textarea {
+/*.input-container textarea {
     width: 100%;
     padding: 8px;
     border: 2px solid #cccccc6c;
@@ -51,21 +51,25 @@ body {
     resize: vertical;
     max-height: 200px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
+}*/
 
 .input-container label {
     margin-bottom: 5px;
     font-size: 25px;
 }
 
+.input-container{
+    padding: 30px 0;
+}
+
 .input-container textarea {
     width: 100%;
-    padding: 8px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-sizing: border-box;
     resize: vertical;
     max-height: 200px;
+    box-shadow: 2px 2px 5px rgba(255, 254, 254, 0.529);
 }
 
 .buttons {
